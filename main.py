@@ -1,0 +1,4 @@
+from LongWordIterator_class import LongWordIterator
+from SentenceIterator_class import SentenceIterator
+from WordIterator_class import WordIterator
+from WordStartsWithIterator_class import WordStartsWithIterator
