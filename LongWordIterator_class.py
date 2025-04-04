@@ -15,8 +15,7 @@ class LongWordIterator:
             raise StopIteration
         word = self.collection[self._index]
         self._index += 1
-        if len(word) > 3:
-            return word
+        return word
 
 
 class Words:
