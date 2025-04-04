@@ -1,9 +1,9 @@
 class WordIterator:
     def __init__(self, text_line):
-        for ch in ".,!?":
+        for ch in ".,!?;:-—()[]{}\"'«»…@#№$%^&*+=/\\|<>~`":
             text_line = text_line.replace(ch, "")
         collection = text_line.strip().split()
-        print(collection)
+        #print(collection)
         self._index = 0
         self.collection = []
         for el in collection:
@@ -24,11 +24,3 @@ class Words:
     def __iter__(self):
         return WordIterator(self.text)
 
-
-
-if __name__ == '__main__':
-    text = "Це приклад тексту, який містить різні слова!"
-    words = Words(text)
-
-    for word in words:
-        print(word)

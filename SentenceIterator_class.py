@@ -17,9 +17,3 @@ class Words:
 
     def __iter__(self):
         return SentenceIterator(self.sentence)
-
-if __name__ == '__main__':
-    text = "Це приклад тексту, який містить різні слова! А ще тут є короткі слова?"
-    words = Words(text)
-    for word in words:
-        print(word)
